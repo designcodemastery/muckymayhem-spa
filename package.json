@@ -1,0 +1,23 @@
+{
+  "name": "muckymayhem-spa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.82.0",
+    "vite": "^6.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "@popperjs/core": "^2.11.8"
+  }
+}

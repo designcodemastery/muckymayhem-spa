@@ -4,7 +4,7 @@
 PROJECT_ROOT="muckymayhem-spa"
 
 # Navigate to project root
-cd $PROJECT_ROOT || { echo "Project root does not exist."; exit 1; }
+#cd $PROJECT_ROOT || { echo "Project root does not exist."; exit 1; }
 
 # Initialize npm project
 npm init -y
