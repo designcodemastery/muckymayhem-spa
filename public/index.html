@@ -12,7 +12,8 @@
 
     <!-- Custom Styles -->
 
-    <!-- JavaScript Files --> <!-- Main entry point for custom scripts --> <!-- Navbar interactions --> <!-- Hero section functionality --> <!-- About Us section scripts --> <!-- Where to Next section logic --> <!-- Sponsors section functionality --> <!-- Ride Diary section scripts --> <!-- Photos gallery management --> <!-- FAQ interactions --> <!-- Contact Us form functionality --> <!-- Disclaimer section logic --> <!-- Footer-specific functionality -->
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer type="module"></script> <!-- Main entry point for custom scripts --> <!-- Navbar interactions --> <!-- Hero section functionality --> <!-- About Us section scripts --> <!-- Where to Next section logic --> <!-- Sponsors section functionality --> <!-- Ride Diary section scripts --> <!-- Photos gallery management --> <!-- FAQ interactions --> <!-- Contact Us form functionality --> <!-- Disclaimer section logic --> <!-- Footer-specific functionality -->
 
 
     <!-- Optional: Additional Font or Icon Libraries -->
@@ -22,11 +23,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <script type="module" crossorigin src="/assets/index-_7ZSmS6M.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/style-CkweRzzS.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-DOgwE9vL.png">
+  <script type="module" crossorigin src="/assets/index-DeHPTmB3.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/style-DiP4FImG.css">
 </head>
-<body>
-    <h1>Welcome Martin!!</h1>
+<body data-bs-theme="dark">
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand brand-text" href="#home">Fleet Mucky Mayhem</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#about-us">About Us</a>
+              <a class="nav-link" href="#where-to-next">Where To Next</a>
+              <a class="nav-link" href="#sponsors">Sponsors</a>
+              <a class="nav-link" href="#ride-diary">Ride Diary</a>
+              <a class="nav-link" href="#photos">Photos</a>
+              <a class="nav-link" href="#faq">FAQ</a>
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+              <a class="nav-link" href="#disclaimer">Disclaimer</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Page Sections -->
+    <main>
+      <section id="home" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-primary text-center">
+        <h1>Welcome to the Home Section</h1>
+      </section>
+      <section id="about-us" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-secondary text-center">
+        <h1>About Us</h1>
+      </section>
+      <section id="where-to-next" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-success text-center">
+        <h1>Where To Next</h1>
+      </section>
+      <section id="sponsors" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-danger text-center">
+        <h1>Sponsors</h1>
+      </section>
+      <section id="ride-diary" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-warning text-center">
+        <h1>Ride Diary</h1>
+      </section>
+      <section id="photos" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-info text-center">
+        <h1>Photos</h1>
+      </section>
+      <section id="faq" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-primary text-center">
+        <h1>FAQ</h1>
+      </section>
+      <section id="contact-us" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-secondary text-center">
+        <h1>Contact Us</h1>
+      </section>
+      <section id="disclaimer" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-success text-center">
+        <h1>Disclaimer</h1>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3">
+        <div class="container">
+        <p class="lead mb-0">&copy; 2025 Fleet Mucky Mayhem | v2.0.0 Designed by Me</p>
+        <a href="#home" class="text-decoration-none" aria-label="Navigate back to the top of the website."><i class="bi bi-arrow-up-circle h1"></i></a>
+        </div>
+    </footer>
 </body>
+
 </html>
