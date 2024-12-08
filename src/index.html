@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fleet Mucky Mayhem SPA">
-    <meta name="author" content="CodeDesignMastery">
-    <title>FMM-SPA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fleet Mucky Mayhem SPA">
+  <meta name="author" content="CodeDesignMastery">
+  <title>FMM-SPA</title>
 
-    <!-- Include Bootstrap (if using via CDN for faster loading) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Bootstrap JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer type="module"></script>
+  <script src="./js/main.js" type="module" defer></script>
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="/src/scss/styles.scss">
-    <link rel="stylesheet" href="/src/scss/base/base.scss">
-    <link rel="stylesheet" href="/src/scss/components/navbar.scss">
-    <link rel="stylesheet" href="/src/scss/components/footer.scss">
-    <link rel="stylesheet" href="/src/scss/pages/hero.scss">
-    <link rel="stylesheet" href="/src/scss/pages/about-us.scss">
-    <link rel="stylesheet" href="/src/scss/pages/where-to-next.scss">
-    <link rel="stylesheet" href="/src/scss/pages/sponsors.scss">
-    <link rel="stylesheet" href="/src/scss/pages/ride-diary.scss">
-    <link rel="stylesheet" href="/src/scss/pages/photos.scss">
-    <link rel="stylesheet" href="/src/scss/pages/faq.scss">
-    <link rel="stylesheet" href="/src/scss/pages/contact-us.scss">
-    <link rel="stylesheet" href="/src/scss/pages/disclaimer.scss">
-
-    <!-- JavaScript Files -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer type="module"></script>
-    <script src="/src/js/app.js" defer type="module"></script> <!-- Main entry point for custom scripts -->
-    <script src="/src/js/navbar.js" defer type="module"></script> <!-- Navbar interactions -->
-    <script src="/src/js/hero.js" defer type="module"></script> <!-- Hero section functionality -->
-    <script src="/src/js/about-us.js" defer type="module"></script> <!-- About Us section scripts -->
-    <script src="/src/js/where-to-next.js" defer type="module"></script> <!-- Where to Next section logic -->
-    <script src="/src/js/sponsors.js" defer type="module"></script> <!-- Sponsors section functionality -->
-    <script src="/src/js/ride-diary.js" defer type="module"></script> <!-- Ride Diary section scripts -->
-    <script src="/src/js/photos.js" defer type="module"></script> <!-- Photos gallery management -->
-    <script src="/src/js/faq.js" defer type="module"></script> <!-- FAQ interactions -->
-    <script src="/src/js/contact-us.js" defer type="module"></script> <!-- Contact Us form functionality -->
-    <script src="/src/js/disclaimer.js" defer type="module"></script> <!-- Disclaimer section logic -->
-    <script src="/src/js/footer.js" defer type="module"></script> <!-- Footer-specific functionality -->
-
+    <!-- App custom JavaScript Files -->
+    <script src="./js/app.js" defer type="module"></script>
+    <script src="./js/navbar.js" defer type="module"></script>
+    <!-- <script src="./js/hero.js" defer type="module"></script>
+    <script src="./js/about-us.js" defer type="module"></script>
+    <script src="./js/where-to-next.js" defer type="module"></script>
+    <script src="./js/sponsors.js" defer type="module"></script>
+    <script src="./js/ride-diary.js" defer type="module"></script>
+    <script src="./js/photos.js" defer type="module"></script>
+    <script src="./js/faq.js" defer type="module"></script>
+    <script src="./js/contact-us.js" defer type="module"></script>
+    <script src="./js/disclaimer.js" defer type="module"></script> -->
+    <script src="./js/footer.js" defer type="module"></script>
 
     <!-- Optional: Additional Font or Icon Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet"/>
@@ -50,7 +34,8 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 </head>
-<body data-bs-theme="dark">
+
+  <body data-bs-theme="dark">
     <!-- Navigation -->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -86,7 +71,10 @@
     <!-- Page Sections -->
     <main>
       <section id="home" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-primary text-center">
-        <h1>Welcome to the Home Section</h1>
+        <div class="container py-4 px-3 mx-auto">
+          <h1>Welcome to the Home Section</h1>
+          <button class="btn btn-secondary">Secondary button</button>
+        </div>
       </section>
       <section id="about-us" class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-secondary text-center">
         <h1>About Us</h1>
@@ -116,11 +104,12 @@
 
     <!-- Footer -->
     <footer class="footer text-center py-3">
-        <div class="container">
+      <div class="container">
         <p class="lead mb-0">&copy; 2025 Fleet Mucky Mayhem | v2.0.0 Designed by Me</p>
         <a href="#home" class="text-decoration-none" aria-label="Navigate back to the top of the website."><i class="bi bi-arrow-up-circle h1"></i></a>
-        </div>
+      </div>
     </footer>
-</body>
+
+  </body>
 
 </html>

@@ -1,4 +1,9 @@
-// styles.scss
-// Main entry point for all SCSS files, importing global styles and components.
+/* styles.scss
+Main entry point for all CSS files, importing global styles and components. */
 
-@import 'bootstrap';
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+@import './base/base.scss'; 
+
+@import './components/navbar.scss';
