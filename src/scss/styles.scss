@@ -2,7 +2,7 @@
 Main entry point for all CSS files, importing global styles and components. */
 
 // Import all of Bootstrap's CSS
-@import "~bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import './base/base.scss'; 
 
