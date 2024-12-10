@@ -20,8 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-DOgwE9vL.png">
-  <script type="module" crossorigin src="/assets/index-C6FB3Rjc.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BaABs8yj.css">
+  <script type="module" crossorigin src="/assets/index-NjPiv3Wl.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BaQs0Z83.css">
 </head>
 
   <body data-bs-theme="dark">
@@ -98,6 +98,20 @@
         <a href="#home" class="text-decoration-none" aria-label="Navigate back to the top of the website."><i class="bi bi-arrow-up-circle h1"></i></a>
       </div>
     </footer>
+
+    <script>
+      // Collapse Navbar on Mobile After Link Click
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          const navbarCollapse = document.getElementById('navbar-nav');
+          const isExpanded = window.getComputedStyle(navbarCollapse).display !== 'none';
+          if (isExpanded) {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            navbarToggler.click();
+          }
+        });
+      });      
+    </script>
 
   </body>
 

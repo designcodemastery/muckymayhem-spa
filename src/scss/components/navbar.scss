@@ -56,7 +56,7 @@
   font-size: 2rem;  /* Font size */
   color: var(--bs-warning);
   text-decoration: none;
-  // display: none;
+  display: none;
 }
 .navbar-brand.brand-text:focus,
 .navbar-brand.brand-text:active {
@@ -64,8 +64,8 @@
   text-decoration: none;
 }
 
-/* Larger Screens: >1400px */
-@media (min-width: 1550px) {
+/* Larger Screens: >1500px */
+@media (min-width: 1499px) {
   .navbar {
       justify-content: space-between; /* Space out the brand and nav */
       padding: 0.5rem 2rem; /* Adjust navbar padding */
@@ -79,4 +79,31 @@
   .navbar .navbar-nav {
       margin-right: 2rem; /* Right margin for nav */
   }
+}
+
+/* Small Screens: <1100px */
+@media (max-width: 1099px) {
+  .navbar {
+      flex-direction: column; /* Stack brand and toggler vertically */
+      align-items: center; /* Center align all elements */
+  }
+
+  .navbar .navbar-brand {
+      display: block; /* Show the brand */
+      font-size: 1.5rem; /* Adjust font size */
+      font-weight: bold; /* Bold text */
+      margin-bottom: 0.5rem; /* Add spacing below the brand */
+      margin-right: 0; /* Remove right margin */
+      text-align: center; /* Center text within its container */
+      width: 100%; /* Ensure it's treated as a block-level element */
+  }
+
+  .navbar .navbar-toggler {
+      display: block; /* Show the hamburger menu */
+      margin: 0 auto; /* Center the button horizontally */
+  }
+
+  // .navbar .navbar-nav {
+  //     display: none; /* Hide nav links for the hamburger menu */
+  // }
 }
